@@ -1,0 +1,56 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Botón hamburguesa */
+.btn-hamburger {
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    z-index: 1050;
+    background-color: #C62828;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    min-height: calc(100vh - 56px); /* Altura menos el header */
+    transition: transform 0.3s ease;
+    padding-bottom: 70px; /* Para no tapar el footer */
+}
+
+/* Ajuste del contenido principal */
+#mainContent {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    #mainContent.shifted {
+        margin-left: 250px;
+    }
+}
+
+/* Enlaces del menú */
+.nav-link {
+    color: #fff !important;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #C62828;
+    border-radius: 5px;
+}
+
+.menu-title {
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    color: #FF9800;
+}
